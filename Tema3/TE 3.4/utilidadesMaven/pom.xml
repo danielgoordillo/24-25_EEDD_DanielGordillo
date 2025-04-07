@@ -6,12 +6,12 @@
 
     <groupId>com.gordillo.daniel</groupId>
     <artifactId>utilidadesMaven</artifactId>
-    <version>1.3</version>
+    <version>1.3-SNAPSHOT</version>
 
     <distributionManagement>
         <repository>
             <id>demo-repo</id>
-            <url>http://157.245.38.33:8081//repository/demo-repo/</url>
+            <url>http://157.245.38.33:8081/repository/demo-repo/</url>
         </repository>
     </distributionManagement>
 
