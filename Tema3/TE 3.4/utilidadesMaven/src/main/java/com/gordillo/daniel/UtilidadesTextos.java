@@ -1,5 +1,3 @@
-package com.gordillo.daniel;
-
 public class UtilidadesTextos {
 
     public static boolean esPalindromo(String cadena) {
