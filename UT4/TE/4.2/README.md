@@ -32,19 +32,21 @@ static int visualizarMedia(int a, int b) {
 Se pide:
 
 Obtener el grafo de flujo asociado al fragmento de programa. adjuntar imagen del grafo de flujo
+![image](https://github.com/user-attachments/assets/3f9a1abe-2f28-439b-9216-e1ef2bb375f9)
 
 Calcular la complejidad ciclomática del grafo.
 
-V(G) = (indica aquí la fórmula de complejidad ciclomática)
+V(G) = (E - N + 2P)
 En base a la complejidad calculada, indica la tabla de pruebas necesaria para alcanzar la cobertura de caminos.
-
+Hay tres caminos posibles.
 Indica las pruebas necesarias junto con los caminos que se deben recorrer para alcanzar la cobertura de caminos. (Rellena la siguiente tabla, (borra antes) donde se indica el nombre del caso de prueba, el camino, las condiciones de cada variable o condición, y el resultado esperado)
 
 | Caso de prueba | Camino | Condiciones | Resultado esperado |
 |----------------|--------|-------------|--------------------|
-| CP1            | I-2-5  | x<0, y<0    | Error: los valores no pueden ser negativos |
-| CP2            | I-2-3  | x>=0, y>=0   | La media es: resultado |
-| ...            | ...    | ...         | ...                |
+| CP1            | 1 → 2 → 3 → 8  | 	x = -1, y = 2  | Error: los valores no pueden ser negativos |
+| CP2            |1 → 2 → 5 → 6 → 8 |x = 2, y = 4  | La media es: 3 |
+| CP3           | 	1 → 2 → 3 → 8   | 	x = 2, y = -5       | Error: los valores no pueden ser negativos
+               |
 Ejercicio 2
 A partir del siguiente algoritmo en pseudocódigo, se pide:
 
@@ -70,12 +72,19 @@ retorna x
 Se pide:
 
 Obtener el grafo de flujo asociado al fragmento de programa. adjuntar imagen del grafo de flujo
+![image](https://github.com/user-attachments/assets/20a859d3-67cd-4b56-bdf1-34c90fc90c81)
 
 Calcular la complejidad ciclomática del grafo.
 
-V(G) = (indica aquí la fórmula de complejidad ciclomática)
+V(G) = ( E - N + 2P = 12 - 10 + 2 = 4)
 En base a la complejidad calculada, indica la tabla de pruebas necesaria para alcanzar la cobertura de caminos.
 
+| Caso de prueba | Camino | Condiciones | Resultado esperado |
+|----------------|--------|-------------|--------------------|
+| CP1            |1→2→3→10 | 		x = -5, y = 3  | Error: los valores no pueden ser negativos |
+| CP2            |1→2→4→5→10 |x = 1, y = 1| retorna 1 |
+| CP3           | 	1→2→4→6→7→8→6→(loop)→10   | 	x = 9, y = 3     | retorna mcd (en este caso, 3)|
+| CP4              |   1→2→4→6→7→9→6→(loop)→10                 |    x = 6, y = 15                   |          retorna mcd (en este caso, 3)                                 |
 Fragmento de Java, algoritmo (método completo):
 
 Ejercicio 3
@@ -103,12 +112,19 @@ Esribir "El costo total es: " + costoTotal
 Se pide:
 
 Obtener el grafo de flujo asociado al fragmento de programa. adjuntar imagen del grafo de flujo
+![image](https://github.com/user-attachments/assets/8d19d75a-1437-4283-88b9-1ec174512567)
 
 Calcular la complejidad ciclomática del grafo.
 
-V(G) = (indica aquí la fórmula de complejidad ciclomática)
+V(G) = (E - N + 2P = 12 - 11 + 2 = 3)
 En base a la complejidad calculada, indica la tabla de pruebas necesaria para alcanzar la cobertura de caminos.
 
+| Caso de prueba | Camino | Condiciones | Resultado esperado |
+|----------------|--------|-------------|--------------------|
+| CP1            |	1→2→3→4→5→6→10→11 | 		cantidad > 1000| 	costo con 10% de descuento |
+| CP2            |1→2→3→4→5→7→8→10→11 |	100 < cantidad ≤ 1000| costo con 5% de descuento|
+| CP3           | 		1→2→3→4→5→7→9→10→11   | cantidad ≤ 100    | 	costo sin descuento|
+                            |
 Ejericio 4
 A partir del siguiente método de programa en Java (incluir condiciones && y retornos directos), se pide:
 
@@ -126,12 +142,19 @@ return a * b;
 Se pide:
 
 Obtener el grafo de flujo asociado al fragmento de programa. adjuntar imagen del grafo de flujo
+![image](https://github.com/user-attachments/assets/ffb51d44-2d5f-4e2a-a5f0-e632e27270f4)
 
 Calcular la complejidad ciclomática del grafo.
 
-V(G) = (indica aquí la fórmula de complejidad ciclomática)
+V(G) = ( E - N + 2P = 9 - 8 + 2 = 3)
 En base a la complejidad calculada, indica la tabla de pruebas necesaria para alcanzar la cobertura de caminos.
 
+| Caso de prueba | Camino | Condiciones | Resultado esperado |
+|----------------|--------|-------------|--------------------|
+| CP1            |	1→2→3 | 		a < 0 y b < 0| -1 |
+| CP2            |1→2→4→5 |	a ≥ 0 o b ≥ 0; a == 0 o b == 0|0|
+| CP3           | 		1→2→4→6→7  | 	a y b > 0; a > b   | 	A+B|
+| CP4               |  1→2→4→6→8          |      	a y b > 0; a ≤ b                  |        A*B            |
 Ejercicio 5 (Resuelto)
 En este ejercicio se trabajan las clases de equivalencia y los valores límite. A partir del siguiente método de programa en Java, se pide:
 
@@ -151,14 +174,25 @@ return "Grande";
 }
 }
 En base a este método, las clases de equivalencia y los valores límite serían los siguientes:
+public static String clasificarTemperatura(int temp) {
+    if (temp < 0) {
+        return "Congelado";
+    } else if (temp <= 15) {
+        return "Frío";
+    } else if (temp <= 30) {
+        return "Templado";
+    } else {
+        return "Calor";
+    }
+}
 
 | Clase de equivalencia | Valores límite |
 |-----------------------|----------------|
-| Negativo              | -1, -10        |
-| Cero                  | 0              |
-| Pequeño               | 1, 5, 10       |
-| Mediano               | 11, 50, 100    |
-| Grande                | 101, 200       |
+| CONGELADO            | -1, -10        |
+| FRIO                 | 0,10,15              |
+| TEMPLADO               | 16, 25, 30       |
+| CALOR              | 31, 40, 100    |
+
 Ejercicio 6
 En base al siguiente método de programa en Java, se pide:
 
@@ -178,9 +212,15 @@ return "Anciano";
 Se pide:
 
 Obtener el grafo de flujo asociado al fragmento de programa. adjuntar imagen del grafo de flujo
+![image](https://github.com/user-attachments/assets/6a592b6e-048e-4fa5-b50a-f676be4a9a41)
+
 Calcular la complejidad ciclomática del grafo.
-V(G) = (indica aquí la fórmula de complejidad ciclomática)
+V(G) = (E - N + 2P = 11 - 10 + 2 = 3)
 Indica las clases de equivalencia y los valores límite para el método clasificarEdad.
 | Clase de equivalencia | Valores límite |
 |-----------------------|----------------|
-| 
+|     edad no valida    |      -1, -10          |
+|     niño             |     0, 5, 12           |
+|     adolescente       |       13, 16, 19         |
+|         adulto      |      20, 40, 65           |
+|         anciano      |     	66, 80, 100            |
