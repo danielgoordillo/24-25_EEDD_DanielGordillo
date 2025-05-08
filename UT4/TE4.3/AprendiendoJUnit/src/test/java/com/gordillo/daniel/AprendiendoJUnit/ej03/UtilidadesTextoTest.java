@@ -16,7 +16,7 @@ class UtilidadesTextoTest {
         assertTrue(UtilidadesTexto.esPalindromo("La ruta natural"));
         assertTrue(UtilidadesTexto.esPalindromo("Dábale arroz a la zorra el abad"));
         assertFalse(UtilidadesTexto.esPalindromo("La casa de la montaña"));
-        assertFalse(UtilidadesTexto.esPalindromo("El gato de San Roque no tiene rabo"));
+        assertFalse(UtilidadesTexto.esPalindromo("El perro de San Roque no tiene rabo"));
     }
     @Test
     @DisplayName("Test contarVocales")
@@ -24,7 +24,7 @@ class UtilidadesTextoTest {
         assertEquals(4, UtilidadesTexto.contarVocales("Hola Mundo"));
         assertEquals(5, UtilidadesTexto.contarVocales("Murcielago"));
         assertEquals(15, UtilidadesTexto.contarVocales("En un lugar de la Mancha de cuyo nombre no quiero acordarme"));
-        assertEquals(10, UtilidadesTexto.contarVocales("El gato de San Roque no tiene rabo"));
+        assertEquals(10, UtilidadesTexto.contarVocales("El perro de San Roque no tiene rabo"));
     }
     @Test
     @DisplayName("Test contarConsonantes")
@@ -32,7 +32,7 @@ class UtilidadesTextoTest {
         assertEquals(6, UtilidadesTexto.contarConsonantes("Hola Mundo"));
         assertEquals(5, UtilidadesTexto.contarConsonantes("Murcielago"));
         assertEquals(25, UtilidadesTexto.contarConsonantes("En un lugar de la Mancha de cuyo nombre no quiero acordarme"));
-        assertEquals(16, UtilidadesTexto.contarConsonantes("El gato de San Roque no tiene rabo"));
+        assertEquals(16, UtilidadesTexto.contarConsonantes("El perro de San Roque no tiene rabo"));
     }
     @Test
     @DisplayName("Test contarPalabras")
