@@ -32,7 +32,7 @@ static int visualizarMedia(int a, int b) {
 Se pide:
 
 Obtener el grafo de flujo asociado al fragmento de programa. adjuntar imagen del grafo de flujo
-![image](https://github.com/user-attachments/assets/3f9a1abe-2f28-439b-9216-e1ef2bb375f9)
+
 
 Calcular la complejidad ciclomática del grafo.
 
@@ -72,7 +72,7 @@ retorna x
 Se pide:
 
 Obtener el grafo de flujo asociado al fragmento de programa. adjuntar imagen del grafo de flujo
-![image](https://github.com/user-attachments/assets/20a859d3-67cd-4b56-bdf1-34c90fc90c81)
+
 
 Calcular la complejidad ciclomática del grafo.
 
@@ -112,7 +112,7 @@ Esribir "El costo total es: " + costoTotal
 Se pide:
 
 Obtener el grafo de flujo asociado al fragmento de programa. adjuntar imagen del grafo de flujo
-![image](https://github.com/user-attachments/assets/8d19d75a-1437-4283-88b9-1ec174512567)
+
 
 Calcular la complejidad ciclomática del grafo.
 
@@ -142,7 +142,7 @@ return a * b;
 Se pide:
 
 Obtener el grafo de flujo asociado al fragmento de programa. adjuntar imagen del grafo de flujo
-![image](https://github.com/user-attachments/assets/ffb51d44-2d5f-4e2a-a5f0-e632e27270f4)
+
 
 Calcular la complejidad ciclomática del grafo.
 
@@ -215,7 +215,7 @@ return "Anciano";
 Se pide:
 
 Obtener el grafo de flujo asociado al fragmento de programa. adjuntar imagen del grafo de flujo
-![image](https://github.com/user-attachments/assets/6a592b6e-048e-4fa5-b50a-f676be4a9a41)
+
 
 Calcular la complejidad ciclomática del grafo.
 V(G) = (E - N + 2P = 11 - 10 + 2 = 3)
