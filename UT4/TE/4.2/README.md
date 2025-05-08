@@ -43,9 +43,9 @@ Indica las pruebas necesarias junto con los caminos que se deben recorrer para a
 
 | Caso de prueba | Camino | Condiciones | Resultado esperado |
 |----------------|--------|-------------|--------------------|
-| CP1            | 1 → 2 → 3 → 8  | 	x = -1, y = 2  | Error: los valores no pueden ser negativos |
-| CP2            |1 → 2 → 5 → 6 → 8 |x = 2, y = 4  | La media es: 3 |
-| CP3           | 	1 → 2 → 3 → 8   | 	x = 2, y = -5       | Error: los valores no pueden ser negativos
+| CP1            | 1 → 2 → 3 → 4| 	x < 0, y >= 0  | Error: los valores no pueden ser negativos |
+| CP2            |1 → 2 → 5 → 6 → 8 |x >= , y < 0  | Error: los valores no pueden ser negativos |
+| CP3           | 	1 → 2 → 3 → 8   | 	x >= 0, y >= 0       | la media es : (x+y)/2
                |
 Ejercicio 2
 A partir del siguiente algoritmo en pseudocódigo, se pide:
@@ -81,10 +81,10 @@ En base a la complejidad calculada, indica la tabla de pruebas necesaria para al
 
 | Caso de prueba | Camino | Condiciones | Resultado esperado |
 |----------------|--------|-------------|--------------------|
-| CP1            |1→2→3→10 | 		x = -5, y = 3  | Error: los valores no pueden ser negativos |
-| CP2            |1→2→4→5→10 |x = 1, y = 1| retorna 1 |
-| CP3           | 	1→2→4→6→7→8→6→(loop)→10   | 	x = 9, y = 3     | retorna mcd (en este caso, 3)|
-| CP4              |   1→2→4→6→7→9→6→(loop)→10                 |    x = 6, y = 15                   |          retorna mcd (en este caso, 3)                                 |
+| CP1            |1→2→3→4 | 		x < 0, y < 0  | Error: los valores no pueden ser negativos |
+| CP2            |1→2→6→7 |x = 1, y = 1 && x >= 0, y >= 0 | retorna 1 |
+| CP3           | 	1→2→6→9→(10→11/13)*→16   | 	x >= 0, y >= 0  && x distinto de y && distinto de 1    | retorna mcd (en este caso, 3)|
+| CP4              |   1→2→6→9→16                 |    x >= 0, y >= 0 && x==y && x distinto de 1                  |          retorna x                            |
 Fragmento de Java, algoritmo (método completo):
 
 Ejercicio 3
@@ -121,9 +121,9 @@ En base a la complejidad calculada, indica la tabla de pruebas necesaria para al
 
 | Caso de prueba | Camino | Condiciones | Resultado esperado |
 |----------------|--------|-------------|--------------------|
-| CP1            |	1→2→3→4→5→6→10→11 | 		cantidad > 1000| 	costo con 10% de descuento |
-| CP2            |1→2→3→4→5→7→8→10→11 |	100 < cantidad ≤ 1000| costo con 5% de descuento|
-| CP3           | 		1→2→3→4→5→7→9→10→11   | cantidad ≤ 100    | 	costo sin descuento|
+| CP1            |	1→2→3→4→5→6→14→15 | 		cantidad > 1000| 	costo con 10% de descuento |
+| CP2            |1→2→3→4→5→7→8→9→14→15 |	100 < cantidad ≤ 1000| costo con 5% de descuento|
+| CP3           | 		1→2→3→4→5→7→8→10→11→14→15   | cantidad ≤ 100    | 	costo sin descuento|
                             |
 Ejericio 4
 A partir del siguiente método de programa en Java (incluir condiciones && y retornos directos), se pide:
@@ -146,15 +146,15 @@ Obtener el grafo de flujo asociado al fragmento de programa. adjuntar imagen del
 
 Calcular la complejidad ciclomática del grafo.
 
-V(G) = ( E - N + 2P = 9 - 8 + 2 = 3)
+V(G) = (Nª decisiones +1=3+1=4)
 En base a la complejidad calculada, indica la tabla de pruebas necesaria para alcanzar la cobertura de caminos.
 
 | Caso de prueba | Camino | Condiciones | Resultado esperado |
 |----------------|--------|-------------|--------------------|
-| CP1            |	1→2→3 | 		a < 0 y b < 0| -1 |
-| CP2            |1→2→4→5 |	a ≥ 0 o b ≥ 0; a == 0 o b == 0|0|
-| CP3           | 		1→2→4→6→7  | 	a y b > 0; a > b   | 	A+B|
-| CP4               |  1→2→4→6→8          |      	a y b > 0; a ≤ b                  |        A*B            |
+| CP1            |	if1→return -1 | 		a < 0 y b < 0| -1 |
+| CP2            |else if1→return 0 | a == 0|0|
+| CP3           | 		else if2→return a+b  | 	a y b > 0; a > b   | 	A+B|
+| CP4               |  else→return a*b          |      	a y b > 0; a ≤ b                  |        A*B            |
 Ejercicio 5 (Resuelto)
 En este ejercicio se trabajan las clases de equivalencia y los valores límite. A partir del siguiente método de programa en Java, se pide:
 
@@ -173,25 +173,28 @@ return "Mediano";
 return "Grande";
 }
 }
+
 En base a este método, las clases de equivalencia y los valores límite serían los siguientes:
-public static String clasificarTemperatura(int temp) {
-    if (temp < 0) {
-        return "Congelado";
-    } else if (temp <= 15) {
-        return "Frío";
-    } else if (temp <= 30) {
-        return "Templado";
+public static String clasificarMultiplo(int numero) {
+    if (numero % 3 == 0 && numero % 5 == 0) {
+        return "Múltiplo de 3 y 5";
+    } else if (numero % 3 == 0) {
+        return "Múltiplo de 3";
+    } else if (numero % 5 == 0) {
+        return "Múltiplo de 5";
     } else {
-        return "Calor";
+        return "No es múltiplo de 3 ni de 5";
     }
 }
 
-| Clase de equivalencia | Valores límite |
+
+| Clase de equivalencia | Valores límite(inferior y superior) |
 |-----------------------|----------------|
-| CONGELADO            | -1, -10        |
-| FRIO                 | 0,10,15              |
-| TEMPLADO               | 16, 25, 30       |
-| CALOR              | 31, 40, 100    |
+| negativo           |-∞,-1       |
+| cero                | 0,0              |
+| pequeño              | 1,10      |
+| mediano                | 11, 100    |
+|  grande                       |    101,	∞             |
 
 Ejercicio 6
 En base al siguiente método de programa en Java, se pide:
@@ -217,10 +220,10 @@ Obtener el grafo de flujo asociado al fragmento de programa. adjuntar imagen del
 Calcular la complejidad ciclomática del grafo.
 V(G) = (E - N + 2P = 11 - 10 + 2 = 3)
 Indica las clases de equivalencia y los valores límite para el método clasificarEdad.
-| Clase de equivalencia | Valores límite |
+| Clase de equivalencia | Valores representativos |
 |-----------------------|----------------|
-|     edad no valida    |      -1, -10          |
-|     niño             |     0, 5, 12           |
+|     edad no valida    |      -1, -100          |
+|     niño             |     0, 6, 12           |
 |     adolescente       |       13, 16, 19         |
 |         adulto      |      20, 40, 65           |
 |         anciano      |     	66, 80, 100            |
