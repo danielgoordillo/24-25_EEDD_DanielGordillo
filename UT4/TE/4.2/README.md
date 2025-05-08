@@ -190,11 +190,11 @@ public static String clasificarMultiplo(int numero) {
 
 | Clase de equivalencia | Valores límite(inferior y superior) |
 |-----------------------|----------------|
-| negativo           |-∞,-1       |
-| cero                | 0,0              |
-| pequeño              | 1,10      |
-| mediano                | 11, 100    |
-|  grande                       |    101,	∞             |
+| Múltiplo de 3 y 5         |numero % 3 == 0 && numero % 5 == 0      |
+| Múltiplo de 3                | numero % 3 == 0 && numero % 5 != 0             |
+| multiplo de 5              |numero % 3 != 0 && numero % 5 == 0     |
+| No múltiplo de 3 ni de 5              | numero % 3 != 0 && numero % 5 != 0    |
+
 
 Ejercicio 6
 En base al siguiente método de programa en Java, se pide:
