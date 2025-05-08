@@ -188,7 +188,7 @@ public static String clasificarMultiplo(int numero) {
 }
 
 
-| Clase de equivalencia | Valores límite(inferior y superior) |
+| Clase de equivalencia | Valores límites |
 |-----------------------|----------------|
 | Múltiplo de 3 y 5         |numero % 3 == 0 && numero % 5 == 0      |
 | Múltiplo de 3                | numero % 3 == 0 && numero % 5 != 0             |
