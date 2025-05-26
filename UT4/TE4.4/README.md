@@ -43,6 +43,6 @@ Como se puede observar, la clase `UtilidadesTexto` tiene una cobertura del 100% 
 **Corrige los test, agregnando nuevos, para conseguir una cobertura del 100% en todos los tipos de cobertura.**
 
 > 🧲 Adjunta una imagen donde se visualize la cobertura de los test.
-![CapturaUtiidadestexto.PNG](img%2FCapturaUtiidadestexto.PNG)
+![CapturaUtiidadestexto.PNG](img%2FCapturaUtiidadestexto.png)
 ![fibonacci.png](img%2Ffibonacci.png)
 > 🧲  Adjuntar un GIF donde se visualize que el resultado de pasar los test y se muestre la cobertura de código resultante.
