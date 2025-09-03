@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="813909de-990a-4abe-808d-1c42b63d9adc" name="Changes" comment="te4" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;danielgoordillo&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/danielgoordillo/24-25_EEDD_DanielGordillo.git&quot;,
+    &quot;accountId&quot;: &quot;6e147a73-1c09-459d-81d7-737579d41fc5&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2xPdvqs4fcOwRNX3ImEW6vmKKhZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.FibonacciTest.executor": "Coverage",
+    "JUnit.UtilidadesNumerosTest.executor": "Coverage",
+    "JUnit.UtilidadesTextoTest.executor": "Coverage",
+    "JUnit.UtilidadesTextoTest.testContarCaracteres.executor": "Run",
+    "JUnit.UtilidadesTextoTest.testContarConsonantes.executor": "Run",
+    "JUnit.UtilidadesTextoTest.testContarPalabras.executor": "Run",
+    "JUnit.UtilidadesTextoTest.testContarVocales.executor": "Run",
+    "JUnit.UtilidadesTextoTest.testEsPalindromo.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "06e32b42",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/ELITEBOOK/IdeaProjects/24-25_EEDD_DanielGordillo",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ELITEBOOK\IdeaProjects\24-25_EEDD_DanielGordillo\UT4\TE4.4\AprendiendoJUnit\img" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.UtilidadesTextoTest">
+    <configuration name="UtilidadesTextoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="24-25_EEDD_DanielGordillo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gordillo.daniel.AprendiendoJUnit.ej03.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gordillo.daniel.AprendiendoJUnit.ej03" />
+      <option name="MAIN_CLASS_NAME" value="com.gordillo.daniel.AprendiendoJUnit.ej03.UtilidadesTextoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UtilidadesTextoTest.testContarCaracteres" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="24-25_EEDD_DanielGordillo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gordillo.daniel.AprendiendoJUnit.ej03.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gordillo.daniel.AprendiendoJUnit.ej03" />
+      <option name="MAIN_CLASS_NAME" value="com.gordillo.daniel.AprendiendoJUnit.ej03.UtilidadesTextoTest" />
+      <option name="METHOD_NAME" value="testContarCaracteres" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UtilidadesTextoTest.testContarConsonantes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="24-25_EEDD_DanielGordillo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gordillo.daniel.AprendiendoJUnit.ej03.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gordillo.daniel.AprendiendoJUnit.ej03" />
+      <option name="MAIN_CLASS_NAME" value="com.gordillo.daniel.AprendiendoJUnit.ej03.UtilidadesTextoTest" />
+      <option name="METHOD_NAME" value="testContarConsonantes" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UtilidadesTextoTest.testContarPalabras" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="24-25_EEDD_DanielGordillo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gordillo.daniel.AprendiendoJUnit.ej03.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gordillo.daniel.AprendiendoJUnit.ej03" />
+      <option name="MAIN_CLASS_NAME" value="com.gordillo.daniel.AprendiendoJUnit.ej03.UtilidadesTextoTest" />
+      <option name="METHOD_NAME" value="testContarPalabras" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UtilidadesTextoTest.testContarVocales" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="24-25_EEDD_DanielGordillo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gordillo.daniel.AprendiendoJUnit.ej03.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gordillo.daniel.AprendiendoJUnit.ej03" />
+      <option name="MAIN_CLASS_NAME" value="com.gordillo.daniel.AprendiendoJUnit.ej03.UtilidadesTextoTest" />
+      <option name="METHOD_NAME" value="testContarVocales" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UtilidadesTextoTest" />
+        <item itemvalue="JUnit.UtilidadesTextoTest.testContarCaracteres" />
+        <item itemvalue="JUnit.UtilidadesTextoTest.testContarPalabras" />
+        <item itemvalue="JUnit.UtilidadesTextoTest.testContarConsonantes" />
+        <item itemvalue="JUnit.UtilidadesTextoTest.testContarVocales" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="813909de-990a-4abe-808d-1c42b63d9adc" name="Changes" comment="" />
+      <created>1747843876068</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1747843876068</updated>
+      <workItem from="1747843877279" duration="2588000" />
+      <workItem from="1747847229421" duration="1021000" />
+    </task>
+    <task id="LOCAL-00001" summary="EE">
+      <option name="closed" value="true" />
+      <created>1747844140405</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1747844140405</updated>
+    </task>
+    <task id="LOCAL-00002" summary="te4">
+      <option name="closed" value="true" />
+      <created>1747846003006</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1747846003006</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="EE" />
+    <MESSAGE value="te4" />
+    <option name="LAST_COMMIT_MESSAGE" value="te4" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/24_25_EEDD_DanielGordillo$UtilidadesTextoTest_testContarCaracteres.ic" NAME="UtilidadesTextoTest.testContarCaracteres Coverage Results" MODIFIED="1747845413643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.gordillo.daniel.AprendiendoJUnit.ej03.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/24_25_EEDD_DanielGordillo$UtilidadesTextoTest.ic" NAME="UtilidadesTextoTest Coverage Results" MODIFIED="1747845450961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.gordillo.daniel.AprendiendoJUnit.ej03.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/24_25_EEDD_DanielGordillo$FibonacciTest.ic" NAME="FibonacciTest Coverage Results" MODIFIED="1747844922152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.gordillo.daniel.AprendiendoJUnit.ej01.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/24_25_EEDD_DanielGordillo$UtilidadesNumerosTest.ic" NAME="UtilidadesNumerosTest Coverage Results" MODIFIED="1747845041481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.gordillo.daniel.AprendiendoJUnit.ej02.*</FILTER>
+    </SUITE>
+  </component>
+</project>
